@@ -1,20 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
-import { navItemAnimation } from '../../animations/navbar-animation';
-
 @Component({
   selector: 'app-breadcrumbs',
   templateUrl: './breadcrumbs.component.html',
-  styleUrls: ['./breadcrumbs.component.css'],
-  animations: [
-    navItemAnimation
-  ]
+  styleUrls: ['./breadcrumbs.component.css']
 })
 export class BreadcrumbsComponent implements OnInit {
   logo_big_path: string = 'assets/img/logo_big.svg';
-  breadcrumb: string = 'home';
-  breadcrumbState: string = 'void';
+  breadcrumb: string;
 
   constructor(private router: Router) { }
 
@@ -30,8 +24,4 @@ export class BreadcrumbsComponent implements OnInit {
   isHomePage() {
     return (this.breadcrumb === '') ? true : false;
   }
-
-  hoverOn() { this.breadcrumbState = 'hover'; }
-  hoverOff() { this.breadcrumbState = 'void'; }
-
 }

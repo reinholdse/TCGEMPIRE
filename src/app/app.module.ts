@@ -4,7 +4,6 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
-import { SharedModule } from './modules/shared/shared.module';
 import { AboutModule } from './modules/about/about.module';
 import { ContactModule } from './modules/contact/contact.module';
 import { BlogModule } from './modules/blog/blog.module';
@@ -33,7 +32,6 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
     FormsModule,
     HttpModule,
     BrowserAnimationsModule,
-    SharedModule,
     AboutModule,
     ContactModule,
     BlogModule,
