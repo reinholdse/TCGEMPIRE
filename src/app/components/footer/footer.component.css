@@ -1,0 +1,33 @@
+footer {
+  width: 100%;
+  height: 100px;
+  padding: 0 70px;
+  background-color: #333333;
+  color: #95989A;
+}
+
+footer #footer-left img {
+  width: 62px;
+  height: 69px;
+}
+
+footer #footer-left span {
+  margin-left: 25px;
+}
+
+footer #footer-middle .footer-link {
+  margin: 0 15px;
+}
+
+footer #footer-right > div {
+  justify-content: flex-start;
+}
+
+footer #footer-right > div:nth-child(1) {
+  margin-bottom: 6px;
+}
+
+footer #footer-right .small-icon {
+  width: 12px;
+  margin-right: 10px;
+}

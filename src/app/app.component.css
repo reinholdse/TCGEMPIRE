@@ -1,0 +1,44 @@
+/*header {
+  width: 100%;
+  height: 80px;
+  padding: 0 70px;
+  background-color: #ffffff;
+  color: #95989A;
+  position: absolute;
+  top: 0;
+}*/
+
+.navbar-default {
+  height: 54px;
+  background: none;
+  border: none;
+}
+
+@media (min-width: 768px) {
+  .navbar-default {
+    height: 68px;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-default {
+    height: 80px;
+  }
+}
+
+
+/*header {
+  height: 54px;
+}
+
+@media (min-width: 768px) {
+  header {
+    height: 68px;
+  }
+}
+
+@media (min-width: 992px) {
+  header {
+    height: 80px;
+  }
+}*/

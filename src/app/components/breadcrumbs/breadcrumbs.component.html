@@ -1,0 +1,14 @@
+<div class="navbar-header">
+  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+  </button>
+  <a id="logoImg" class="pull-left" routerLink="/">
+    <img [src]="logo_big_path" alt="Logo">
+  </a>
+  <a class="navbar-brand"
+     routerLink="/" *ngIf="isHomePage()">
+     TCG<span>EMPIRE</span>
+  </a>
+</div>
