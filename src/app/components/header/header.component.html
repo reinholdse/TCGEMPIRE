@@ -7,8 +7,6 @@
   <a id="logoImg" class="pull-left" routerLink="/">
     <img [src]="logo_big_path" alt="Logo">
   </a>
-  <a class="navbar-brand"
-     routerLink="/" *ngIf="isHomePage()">
-     TCG<span>EMPIRE</span>
-  </a>
+
+  <app-breadcrumb></app-breadcrumb>
 </div>

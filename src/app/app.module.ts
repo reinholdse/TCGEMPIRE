@@ -14,7 +14,8 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 
-import { BreadcrumbsComponent } from './components/breadcrumbs/breadcrumbs.component';
+import { HeaderComponent } from './components/header/header.component';
+import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PageNotFoundComponent } from './components/not-found/not-found.component';
@@ -22,7 +23,8 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
 @NgModule({
   declarations: [
     AppComponent,
-    BreadcrumbsComponent,
+    HeaderComponent,
+    BreadcrumbComponent,
     NavigationComponent,
     FooterComponent,
     PageNotFoundComponent

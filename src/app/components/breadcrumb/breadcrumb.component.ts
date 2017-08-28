@@ -2,12 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 
 @Component({
-  selector: 'app-breadcrumbs',
-  templateUrl: './breadcrumbs.component.html',
-  styleUrls: ['./breadcrumbs.component.css']
+  selector: 'app-breadcrumb',
+  templateUrl: './breadcrumb.component.html',
+  styleUrls: ['./breadcrumb.component.css']
 })
-export class BreadcrumbsComponent implements OnInit {
-  logo_big_path: string = 'assets/img/logo_big.svg';
+export class BreadcrumbComponent implements OnInit {
   breadcrumb: string;
 
   constructor(private router: Router) { }
@@ -24,4 +23,5 @@ export class BreadcrumbsComponent implements OnInit {
   isHomePage() {
     return (this.breadcrumb === '') ? true : false;
   }
+
 }
