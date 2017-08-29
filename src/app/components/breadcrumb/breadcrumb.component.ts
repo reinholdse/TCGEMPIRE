@@ -3,6 +3,7 @@ import { Router, NavigationEnd, Params, ActivatedRoute, PRIMARY_OUTLET } from '@
 
 interface IBreadcrumb {
   label: string,
+  params: Params,
   url: string
 }
 
@@ -25,35 +26,69 @@ export class BreadcrumbComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-
-
-        let urlParts = this.router.url.slice(1).split('/');
-        let url = '';
-
-
-        this.breadcrumbs = [];
-
-
-        for (let part of urlParts) {
-          url += '/' + part;
-
-
-          let breadcrumb: IBreadcrumb = {
-            label: part.charAt(0).toUpperCase() + part.slice(1),
-            url: url
-          }
-
-
-          this.breadcrumbs.push(breadcrumb);
-        }
-
-
-
+        let root = this.activatedRoute.root;
+        this.breadcrumbs = this.getBreadcrumbs(root);
+        console.log("FINALLY");
+        console.log(this.breadcrumbs);
       }
     });
   }
 
+  private getBreadcrumbs(
+    route: ActivatedRoute,
+    url: string='',
+    breadcrumbs: IBreadcrumb[]=[]
+  ): IBreadcrumb[] {
+    const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
+
+    //get the child routes
+    let children: ActivatedRoute[] = route.children;
+
+    console.log(route.snapshot.url);
+
+    //return if there are no more children
+    if (children.length === 0) {
+      return breadcrumbs;
+    }
+
+    //iterate over each children
+    for (let child of children) {
+      //verify primary route
+      if (child.outlet !== PRIMARY_OUTLET) {
+        continue;
+      }
+
+      console.log("huhu");
+
+      //verify the custom data property "breadcrumb" is specified on the route
+      if (!child.snapshot.data.hasOwnProperty(ROUTE_DATA_BREADCRUMB)) {
+        console.log("Hi");
+        console.log(this.getBreadcrumbs(child, url, breadcrumbs));
+        return this.getBreadcrumbs(child, url, breadcrumbs);
+      }
+
+      console.log("bubu");
+
+      //get the route's URL segment
+      let routeURL: string = child.snapshot.url.map(segment => segment.path).join("/");
+
+      //append route URL to URL
+      url += `/${routeURL}`;
+
+      //add breadcrumb
+      let breadcrumb: IBreadcrumb = {
+        label: child.snapshot.data[ROUTE_DATA_BREADCRUMB],
+        params: child.snapshot.params,
+        url: url
+      };
+      breadcrumbs.push(breadcrumb);
+
+      //recursive
+      return this.getBreadcrumbs(child, url, breadcrumbs);
+    }
+  }
+
   isHomePage() {
-    return (this.breadcrumbs.length === 1 && this.breadcrumbs[0].label === "") ? true : false;
+    return (this.breadcrumbs.length === 0) ? true : false;
   }
 }
