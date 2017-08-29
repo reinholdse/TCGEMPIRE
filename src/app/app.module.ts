@@ -8,7 +8,7 @@ import { AboutModule } from './modules/about/about.module';
 import { ContactModule } from './modules/contact/contact.module';
 import { BlogModule } from './modules/blog/blog.module';
 import { EventsModule } from './modules/events/events.module';
-import { LandingModule } from './modules/landing/landing.module';
+import { HomeModule } from './modules/home/home.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -38,7 +38,7 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
     ContactModule,
     BlogModule,
     EventsModule,
-    LandingModule,
+    HomeModule,
     AppRoutingModule
   ],
   providers: [],
