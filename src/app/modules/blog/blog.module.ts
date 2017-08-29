@@ -6,10 +6,12 @@ import { BlogRoutingModule } from './blog-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { MainComponent } from './components/main/main.component';
+import { ArticleComponent } from './components/article/article.component';
 
 @NgModule({
   declarations: [
-    MainComponent
+    MainComponent,
+    ArticleComponent
   ],
   imports: [
     CommonModule,

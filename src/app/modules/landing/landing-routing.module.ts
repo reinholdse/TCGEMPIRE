@@ -4,7 +4,7 @@ import { RouterModule, Routes }  from '@angular/router';
 import { MainComponent } from './components/main/main.component';
 
 const landingRoutes: Routes = [
-  { path: '', component: MainComponent, data: { breadcrumb: 'home' } }
+  { path: '', component: MainComponent }
 ];
 
 @NgModule({

@@ -2,3 +2,13 @@
    routerLink="/" *ngIf="isHomePage()">
    TCG<span>EMPIRE</span>
 </a>
+
+<!-- <a class="navbar-brand" routerLink="/">
+   TCG<span>EMPIRE</span>
+</a> -->
+
+<ol>
+  <li *ngFor="let breadcrumb of breadcrumbs">
+    <a [routerLink]="[breadcrumb.url, breadcrumb.params]">{{ breadcrumb.label }}</a>
+  </li>
+</ol>
