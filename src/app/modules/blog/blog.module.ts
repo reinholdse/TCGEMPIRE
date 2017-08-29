@@ -5,15 +5,13 @@ import { BlogRoutingModule } from './blog-routing.module';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { MainComponent } from './components/main/main.component';
+import { BlogComponent } from './blog.component';
 import { ArticleComponent } from './components/article/article.component';
-import { ListComponent } from './components/list/list.component';
 
 @NgModule({
   declarations: [
-    MainComponent,
-    ArticleComponent,
-    ListComponent
+    BlogComponent,
+    ArticleComponent
   ],
   imports: [
     CommonModule,

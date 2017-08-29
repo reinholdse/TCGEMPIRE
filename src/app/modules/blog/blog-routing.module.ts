@@ -1,21 +1,12 @@
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
-import { MainComponent } from './components/main/main.component';
+import { BlogComponent } from './blog.component';
 import { ArticleComponent } from './components/article/article.component';
-import { ListComponent } from './components/list/list.component';
 
 const blogRoutes: Routes = [
-  {
-    path: 'blog',
-    component: MainComponent,
-    data: { breadcrumb: 'Blog' },
-    children: [
-      { path: '', redirectTo: 'overview', pathMatch: 'full' },
-      { path: 'overview', component: ListComponent },
-      { path: ':title', component: ArticleComponent, data: { breadcrumb: 'Article' } }
-    ]
-  }
+  { path: 'blog', component: BlogComponent, data: { breadcrumb: 'Blog' } },
+  { path: 'blog/:title', component: ArticleComponent, data: { breadcrumb: 'Article' } }
 ];
 
 @NgModule({

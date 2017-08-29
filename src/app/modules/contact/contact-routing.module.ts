@@ -1,10 +1,10 @@
 import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
-import { MainComponent } from './components/main/main.component';
+import { ContactComponent } from './contact.component';
 
 const contactRoutes: Routes = [
-  { path: 'contact', component: MainComponent, data: { breadcrumb: 'Contact' } }
+  { path: 'contact', component: ContactComponent, data: { breadcrumb: 'Contact' } }
 ];
 
 @NgModule({

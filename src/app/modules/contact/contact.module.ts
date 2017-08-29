@@ -5,11 +5,11 @@ import { ContactRoutingModule } from './contact-routing.module';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { MainComponent } from './components/main/main.component';
+import { ContactComponent } from './contact.component';
 
 @NgModule({
   declarations: [
-    MainComponent
+    ContactComponent
   ],
   imports: [
     CommonModule,

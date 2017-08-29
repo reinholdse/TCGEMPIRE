@@ -5,11 +5,11 @@ import { EventsRoutingModule } from './events-routing.module';
 
 import { SharedModule } from '../shared/shared.module';
 
-import { MainComponent } from './components/main/main.component';
+import { EventsComponent } from './events.component';
 
 @NgModule({
   declarations: [
-    MainComponent
+    EventsComponent
   ],
   imports: [
     CommonModule,
