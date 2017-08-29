@@ -13,6 +13,7 @@ import { HomeModule } from './modules/home/home.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BreadcrumbService } from './services/breadcrumb.service';
+import { DatabaseService } from './services/database.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -42,7 +43,10 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
     HomeModule,
     AppRoutingModule
   ],
-  providers: [BreadcrumbService],
+  providers: [
+    BreadcrumbService,
+    DatabaseService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

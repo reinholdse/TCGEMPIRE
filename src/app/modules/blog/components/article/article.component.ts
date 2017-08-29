@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, ParamMap } from '@angular/router';
+import { Article, DatabaseService } from '../../../../services/database.service';
 import { Breadcrumb, BreadcrumbService } from '../../../../services/breadcrumb.service';
+
+import 'rxjs/add/operator/switchMap';
 
 @Component({
   selector: 'blog-article',
@@ -12,6 +15,7 @@ export class ArticleComponent implements OnInit {
 
   constructor(
     private breadcrumbService: BreadcrumbService,
+    private databaseService: DatabaseService,
     private route: ActivatedRoute
   ) {
     this.breadcrumbs = [
@@ -21,10 +25,8 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap
-//      .switchMap((params: ParamMap) => params.get('title')
-      .subscribe((params: ParamMap) => {
-        this.breadcrumbs.push({ label: params.get('title'), url: '/blog/' + params.get('title') });
-      });
+      .switchMap((params: ParamMap) => this.databaseService.getArticle(+params.get('id')))
+      .subscribe((article: Article) => this.breadcrumbs.push({ label: article.title, url: '/blog/' + article.id }));
     this.breadcrumbService.setBreadcrumbs(this.breadcrumbs);
   }
 }
