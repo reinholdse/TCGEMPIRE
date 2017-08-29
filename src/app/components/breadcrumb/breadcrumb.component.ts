@@ -3,7 +3,6 @@ import { Router, NavigationEnd, Params, ActivatedRoute, PRIMARY_OUTLET } from '@
 
 interface IBreadcrumb {
   label: string,
-  params: Params,
   url: string
 }
 
@@ -26,59 +25,35 @@ export class BreadcrumbComponent implements OnInit {
   ngOnInit() {
     this.router.events.subscribe(event => {
       if (event instanceof NavigationEnd) {
-        let root = this.activatedRoute.root;
-        this.breadcrumbs = this.getBreadcrumbs(root);
+
+
+        let urlParts = this.router.url.slice(1).split('/');
+        let url = '';
+
+
+        this.breadcrumbs = [];
+
+
+        for (let part of urlParts) {
+          url += '/' + part;
+
+
+          let breadcrumb: IBreadcrumb = {
+            label: part.charAt(0).toUpperCase() + part.slice(1),
+            url: url
+          }
+
+
+          this.breadcrumbs.push(breadcrumb);
+        }
+
+
+
       }
     });
   }
 
-  private getBreadcrumbs(
-    route: ActivatedRoute,
-    url: string='',
-    breadcrumbs: IBreadcrumb[]=[]
-  ): IBreadcrumb[] {
-    const ROUTE_DATA_BREADCRUMB: string = "breadcrumb";
-
-    //get the child routes
-    let children: ActivatedRoute[] = route.children;
-
-    //return if there are no more children
-    if (children.length === 0) {
-      return breadcrumbs;
-    }
-
-    //iterate over each children
-    for (let child of children) {
-      //verify primary route
-      if (child.outlet !== PRIMARY_OUTLET) {
-        continue;
-      }
-
-      //verify the custom data property "breadcrumb" is specified on the route
-      if (!child.snapshot.data.hasOwnProperty(ROUTE_DATA_BREADCRUMB)) {
-        return this.getBreadcrumbs(child, url, breadcrumbs);
-      }
-
-      //get the route's URL segment
-      let routeURL: string = child.snapshot.url.map(segment => segment.path).join("/");
-
-      //append route URL to URL
-      url += `/${routeURL}`;
-
-      //add breadcrumb
-      let breadcrumb: IBreadcrumb = {
-        label: child.snapshot.data[ROUTE_DATA_BREADCRUMB],
-        params: child.snapshot.params,
-        url: url
-      };
-      breadcrumbs.push(breadcrumb);
-
-      //recursive
-      return this.getBreadcrumbs(child, url, breadcrumbs);
-    }
-  }
-
   isHomePage() {
-    return (this.breadcrumbs.length === 0) ? true : false;
+    return (this.breadcrumbs.length === 1 && this.breadcrumbs[0].label === "") ? true : false;
   }
 }
