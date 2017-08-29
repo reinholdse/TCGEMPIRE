@@ -12,8 +12,9 @@ import { HomeModule } from './modules/home/home.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
-import { AppComponent } from './app.component';
+import { BreadcrumbService } from './services/breadcrumb.service';
 
+import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
@@ -41,7 +42,7 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
     HomeModule,
     AppRoutingModule
   ],
-  providers: [],
+  providers: [BreadcrumbService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
