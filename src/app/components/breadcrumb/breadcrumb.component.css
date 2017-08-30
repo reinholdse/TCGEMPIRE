@@ -26,16 +26,19 @@
 }
 
 .breadcrumb {
-  color: #383838;
   text-decoration: none;
-  position: relative;
   margin: 0;
   padding: 0;
   background: none;
   font-weight: 400;
 }
 
-.breadcrumb:after {
+.underlined {
+  color: #383838;
+  position: relative;
+}
+
+.underlined:after {
   content: '';
   width: 0;
   height: 1px;
@@ -46,16 +49,16 @@
   transition: left .1s ease-in-out, width .1s ease-in-out;
 }
 
-.breadcrumb:hover:after {
+.underlined:hover:after {
   width: calc(100% + 2px);
   left: -1px;
 }
 
-.breadcrumb:active {
+.underlined:active {
   color: #38AEE8;
 }
 
-.breadcrumb:active:after {
+.underlined:active:after {
   background-color: #38AEE8;
 }
 
