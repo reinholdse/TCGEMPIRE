@@ -21,7 +21,7 @@ export class BreadcrumbComponent implements OnInit {
     });
   }
 
-  isHomePage() {
-    return (this.breadcrumbs.length === 0) ? true : false;
+  public showBrand() {
+    return (this.breadcrumbs.length === 0 || window.innerWidth < 768);
   }
 }

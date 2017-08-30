@@ -1,9 +1,9 @@
 <a class="navbar-brand"
-   routerLink="/" *ngIf="isHomePage()">
+   routerLink="/" *ngIf="showBrand()">
    TCG<span>EMPIRE</span>
 </a>
 
-<span id="breadcrumbs" *ngIf="!isHomePage()">
+<span id="breadcrumbs" *ngIf="!showBrand()">
   <ng-container *ngFor="let breadcrumb of breadcrumbs">
     /
     <a [routerLink]="breadcrumb.url" class="breadcrumb">{{ breadcrumb.label }}</a>

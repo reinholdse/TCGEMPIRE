@@ -9,6 +9,7 @@ import { ContactModule } from './modules/contact/contact.module';
 import { BlogModule } from './modules/blog/blog.module';
 import { EventsModule } from './modules/events/events.module';
 import { HomeModule } from './modules/home/home.module';
+import { ErrorsModule } from './modules/errors/errors.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -20,7 +21,6 @@ import { HeaderComponent } from './components/header/header.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
 import { NavigationComponent } from './components/navigation/navigation.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { PageNotFoundComponent } from './components/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,8 +28,7 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
     HeaderComponent,
     BreadcrumbComponent,
     NavigationComponent,
-    FooterComponent,
-    PageNotFoundComponent
+    FooterComponent
   ],
   imports: [
     BrowserModule,
@@ -41,6 +40,7 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
     BlogModule,
     EventsModule,
     HomeModule,
+    ErrorsModule,
     AppRoutingModule
   ],
   providers: [
