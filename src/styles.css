@@ -38,6 +38,10 @@ h1, h2, h3 {
   font-family: 'Roboto Slab', serif;
 }
 
+.font-weight-light {
+  font-weight: 100;
+}
+
 .loader-container {
   width: 100%;
   height: 100%;

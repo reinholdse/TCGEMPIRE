@@ -1,21 +1,14 @@
 .navbar-brand {
-  font-family: 'Roboto Slab', serif;
-  color: #95989A;
   padding: 0;
   margin: 0 !important;
   line-height: 54px;
 }
 
-.navbar-brand:hover {
-  color: #383838;
-}
-
-.navbar-brand:active {
-  color: #38AEE8;
-}
-
-.navbar-brand > span{
-  font-weight: 100;
+.navbar-brand h1 {
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px;
+  margin: 0;
+  line-height: inherit;
 }
 
 #breadcrumbs {
@@ -67,10 +60,6 @@
   #breadcrumbs {
     line-height: 68px;
   }
-
-  #breadcrumbs {
-    font-size: 14px;
-  }
 }
 
 @media (min-width: 768px) {
@@ -78,12 +67,20 @@
   #breadcrumbs {
     line-height: 68px;
   }
+
+  .navbar-brand h1 {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 992px) {
   .navbar-brand,
   #breadcrumbs {
     line-height: 80px;
+  }
+
+  .navbar-brand h1 {
+    font-size: 22px;
   }
 
   #breadcrumbs {
