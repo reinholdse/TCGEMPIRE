@@ -11,7 +11,7 @@
   color: #383838;
 }
 
-.navbar-brand:active
+.navbar-brand:active,
 .breadcrumb:active {
   color: #38AEE8;
 }

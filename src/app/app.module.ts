@@ -13,7 +13,7 @@ import { HomeModule } from './modules/home/home.module';
 import { AppRoutingModule } from './app-routing.module';
 
 import { BreadcrumbService } from './services/breadcrumb.service';
-import { DatabaseService } from './services/database.service';
+import { DummyDatabaseService } from './services/dummy-database.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -45,7 +45,7 @@ import { PageNotFoundComponent } from './components/not-found/not-found.componen
   ],
   providers: [
     BreadcrumbService,
-    DatabaseService
+    DummyDatabaseService
   ],
   bootstrap: [AppComponent]
 })

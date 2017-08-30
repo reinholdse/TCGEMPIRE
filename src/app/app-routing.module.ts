@@ -4,7 +4,8 @@ import { RouterModule, Routes }  from '@angular/router';
 import { PageNotFoundComponent } from './components/not-found/not-found.component';
 
 const appRoutes: Routes = [
-  { path: '**', component: PageNotFoundComponent }
+  { path: 'page-not-found', component: PageNotFoundComponent },
+  { path: '**', redirectTo: '/page-not-found', pathMatch: 'full'}
 ];
 
 @NgModule({

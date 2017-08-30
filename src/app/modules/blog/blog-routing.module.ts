@@ -5,8 +5,8 @@ import { BlogComponent } from './blog.component';
 import { ArticleComponent } from './components/article/article.component';
 
 const blogRoutes: Routes = [
-  { path: 'blog', component: BlogComponent, data: { breadcrumb: 'Blog' } },
-  { path: 'blog/:id', component: ArticleComponent, data: { breadcrumb: 'Article' } }
+  { path: 'blog', component: BlogComponent },
+  { path: 'blog/:id', component: ArticleComponent }
 ];
 
 @NgModule({

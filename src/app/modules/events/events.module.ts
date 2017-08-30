@@ -6,10 +6,12 @@ import { EventsRoutingModule } from './events-routing.module';
 import { SharedModule } from '../shared/shared.module';
 
 import { EventsComponent } from './events.component';
+import { EventComponent } from './components/event/event.component';
 
 @NgModule({
   declarations: [
-    EventsComponent
+    EventsComponent,
+    EventComponent
   ],
   imports: [
     CommonModule,

@@ -1,16 +1,16 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-import { Article, DummyDatabaseService } from '../../../../services/dummy-database.service';
+import { Event, DummyDatabaseService } from '../../../../services/dummy-database.service';
 import { Breadcrumb, BreadcrumbService } from '../../../../services/breadcrumb.service';
 
 import 'rxjs/add/operator/switchMap';
 
 @Component({
-  selector: 'blog-article',
-  templateUrl: './article.component.html',
-  styleUrls: ['./article.component.css']
+  selector: 'events-event',
+  templateUrl: './event.component.html',
+  styleUrls: ['./event.component.css']
 })
-export class ArticleComponent implements OnInit {
+export class EventComponent implements OnInit {
   private breadcrumbs: Breadcrumb[];
 
   constructor(
@@ -20,18 +20,18 @@ export class ArticleComponent implements OnInit {
     private router: Router
   ) {
     this.breadcrumbs = [
-      { label: 'Blog', url: '/blog' }
+      { label: 'Events', url: '/events' }
     ];
   }
 
   ngOnInit() {
     this.route.paramMap
-      .switchMap((params: ParamMap) => this.databaseService.getArticle(+params.get('id')))
-      .subscribe((article: Article) => {
-        if (!article)
+      .switchMap((params: ParamMap) => this.databaseService.getEvent(+params.get('id')))
+      .subscribe((event: Event) => {
+        if (!event)
           this.router.navigate(["/page-not-found"]);
         else
-          this.breadcrumbs.push({ label: article.title, url: '/blog/' + article.id })
+          this.breadcrumbs.push({ label: event.title, url: '/events/' + event.id });
       });
     this.breadcrumbService.setBreadcrumbs(this.breadcrumbs);
   }

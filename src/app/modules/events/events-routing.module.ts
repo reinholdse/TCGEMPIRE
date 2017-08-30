@@ -2,9 +2,11 @@ import { NgModule }              from '@angular/core';
 import { RouterModule, Routes }  from '@angular/router';
 
 import { EventsComponent } from './events.component';
+import { EventComponent } from './components/event/event.component';
 
 const eventsRoutes: Routes = [
-  { path: 'events', component: EventsComponent, data: { breadcrumb: 'Events' } }
+  { path: 'events', component: EventsComponent },
+  { path: 'events/:id', component: EventComponent }
 ];
 
 @NgModule({
