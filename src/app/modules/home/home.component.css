@@ -9,7 +9,7 @@
 
 #banner p {
   max-width: 276px;
-  margin: 10px auto 18px;
+  margin: 6px auto 18px;
 }
 
 @media (min-width: 576px) {
@@ -21,7 +21,7 @@
 
   #banner p {
     max-width: 340px;
-    margin: 14px auto 26px;
+    margin: 10px auto 26px;
   }
 }
 
