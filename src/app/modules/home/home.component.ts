@@ -16,5 +16,4 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.breadcrumbService.setBreadcrumbs(this.breadcrumbs);
   }
-
 }

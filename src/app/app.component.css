@@ -1,17 +1,18 @@
-.navbar-default {
+header {
   height: 54px;
-  background: none;
+  background-color: rgba(256,256,256,.95);
   border: none;
+  margin: 0;
 }
 
-@media (min-width: 768px) {
-  .navbar-default {
+@media (min-width: 576px) {
+  header {
     height: 68px;
   }
 }
 
 @media (min-width: 992px) {
-  .navbar-default {
+  header {
     height: 80px;
   }
 }
