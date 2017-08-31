@@ -30,7 +30,6 @@ nav {
   border: none;
   outline: 0;
   cursor: pointer;
-  padding: .5rem;
 }
 
 .navbar-toggler > .icon-bar {
@@ -67,7 +66,6 @@ nav {
   width: 40px;
   height: 40px;
   margin-right: 10px;
-  position: relative;
 }
 
 @media (min-width: 576px) {
@@ -103,7 +101,10 @@ nav {
 
 @media (max-width: 767px) {
   .navbar-collapse {
-    position: relative;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     text-align: center;
     background-color: #FFD972;
   }
@@ -118,11 +119,6 @@ nav {
   }
 }
 
-.navbar-collapse {
-  top: -54px;
-  padding: 0 1rem;
-}
-
 .navbar-nav > .nav-item {
   font-size: 22px;
   padding: 0 22.5px;
@@ -131,14 +127,10 @@ nav {
 }
 
 .navbar-nav > .nav-item:last-child {
-  padding-right: .5rem;
+  padding-right: 0;
 }
 
 @media (min-width: 576px) {
-  .navbar-collapse {
-    top: -68px;
-  }
-
   .navbar-nav > .nav-item {
     font-size: 24px;
     line-height: 68px;
