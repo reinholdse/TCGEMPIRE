@@ -1,8 +1,6 @@
 #shopIntroduction {
   background: linear-gradient(100deg, #0D89C6, #5fbdec);
   color: white;
-  padding-top: 30px;
-  padding-bottom: 30px;
 }
 
 #shopIntroduction button {
@@ -10,36 +8,19 @@
 }
 
 @media(min-width: 576px) {
-  #shopIntroduction {
-    padding-top: 35px;
-    padding-bottom: 35px;
-  }
-
   #shopIntroduction button {
     margin: 12px 0;
   }
 }
 
-@media(min-width: 768px) {
-  #shopIntroduction {
-    padding-top: 42px;
-    padding-bottom: 42px;
-  }
-}
-
 @media(min-width: 992px) {
-  #shopIntroduction {
-    padding-top: 45px;
-    padding-bottom: 45px;
-  }
-
   #shopIntroduction button {
     margin: 16px 0;
   }
 }
 
 .cards {
-  margin: 12px 0;
+  margin-bottom: 12px;
 }
 
 .card {
@@ -55,7 +36,7 @@
 
 @media(min-width: 576px) {
   .cards {
-    margin: 15px 0;
+    margin-bottom: 15px;
   }
 
   .card {
@@ -66,7 +47,7 @@
 
 @media(min-width: 768px) {
   .cards {
-    margin: 18px 0;
+    margin-bottom: 18px;
   }
 
   .card {
@@ -76,11 +57,15 @@
 
 @media(min-width: 992px) {
   .cards {
-    margin: 22px 0;
+    margin-bottom: 22px;
   }
 }
 
 @media(min-width: 1200px) {
+  .cards {
+    margin-bottom: 25px;
+  }
+
   .col-xl-offset-1 {
     margin-left: 8.333333%;
   }

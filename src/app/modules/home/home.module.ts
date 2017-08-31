@@ -8,12 +8,14 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { ShopInfoComponent } from './components/shop-info/shop-info.component';
+import { PeopleComponent } from './components/people/people.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     BannerComponent,
-    ShopInfoComponent
+    ShopInfoComponent,
+    PeopleComponent
   ],
   imports: [
     CommonModule,
