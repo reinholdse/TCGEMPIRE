@@ -1,12 +1,27 @@
-<div class="navbar-header">
-  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-  <a id="logoImg" class="pull-left" routerLink="/">
-    <img [src]="logo_big_path" alt="Logo">
-  </a>
+<header class="fixed-top">
+  <div class="container">
+    <nav class="navbar navbar-expand-md">
+      <div class="navbar-brand h-100 ml-3 d-flex align-items-center">
+        <a id="logoImg" routerLink="/" data-toggle="collapse" data-target="#navbar.show">
+          <img [src]="logo_big_path" class="d-inline-block align-top" alt="Logo">
+        </a>
+        <app-breadcrumb class="d-inline-block align-top"></app-breadcrumb>
+      </div>
 
-  <app-breadcrumb></app-breadcrumb>
-</div>
+      <button class="navbar-toggler mr-3" type="button" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbar" data-toggle="collapse" data-target="#navbar.show">
+        <div class="navbar-nav ml-auto">
+          <a class="nav-item" routerLink="/events"> Events </a>
+          <a class="nav-item" routerLink="/blog"> Blog </a>
+          <a class="nav-item" routerLink="/contact"> Contact </a>
+          <a class="nav-item" routerLink="/about"> About </a>
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>

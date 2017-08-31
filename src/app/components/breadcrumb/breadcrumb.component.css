@@ -1,10 +1,8 @@
-.navbar-brand {
-  padding: 0;
-  margin: 0 !important;
-  line-height: 54px;
+.brand-name {
+  text-decoration: none;
 }
 
-.navbar-brand h1 {
+.brand-name h1 {
   font-family: 'Roboto Slab', serif;
   font-size: 18px;
   margin: 0;
@@ -13,7 +11,6 @@
 
 #breadcrumbs {
   color: #95989A;
-  line-height: 54px;
   font-size: 14px;
   font-weight: 300;
 }
@@ -55,31 +52,14 @@
   background-color: #38AEE8;
 }
 
-@media (min-width: 576px) {
-  .navbar-brand,
-  #breadcrumbs {
-    line-height: 68px;
-  }
-}
-
 @media (min-width: 768px) {
-  .navbar-brand,
-  #breadcrumbs {
-    line-height: 68px;
-  }
-
-  .navbar-brand h1 {
+  .brand-name h1 {
     font-size: 20px;
   }
 }
 
 @media (min-width: 992px) {
-  .navbar-brand,
-  #breadcrumbs {
-    line-height: 80px;
-  }
-
-  .navbar-brand h1 {
+  .brand-name h1 {
     font-size: 22px;
   }
 

@@ -1,4 +1,4 @@
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   .navbar-collapse {
     border: none;
     box-shadow: none;
@@ -9,11 +9,11 @@
     margin: 0 -15px;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav > .nav-item {
     color: #383838;
   }
 
-  .navbar-nav > li > a:active {
+  .navbar-nav > .nav-item:active {
     color: #38AEE8;
   }
 }
@@ -26,7 +26,7 @@
   margin: 0;
 }
 
-.navbar-nav > li > a {
+.navbar-nav > .nav-item {
   font-size: 22px;
   padding: 0 22.5px;
   line-height: 54px;
@@ -37,7 +37,7 @@
     top: -68px;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav > .nav-item {
     font-size: 24px;
     line-height: 68px;
   }
@@ -48,25 +48,25 @@
     top: 0;
   }
 
-  .navbar-nav > li > a {
+  .navbar-nav > .nav-item {
     line-height: 68px;
     font-size: 16px;
     font-weight: 300;
     color: #95989A;
   }
 
-  .navbar-nav > li > a:hover {
+  .navbar-nav > .nav-item:hover {
     color: #383838;
   }
 
-  .navbar-nav > li > a:active {
+  .navbar-nav > .nav-item:active {
     color: #38AEE8;
   }
 }
 
 @media (min-width: 992px) {
-  .navbar-nav > li > a {
+  .navbar-nav > .nav-item {
     line-height: 80px;
     font-size: 18px;
   }
-}
+}*/
