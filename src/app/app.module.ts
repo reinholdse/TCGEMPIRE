@@ -19,7 +19,6 @@ import { DummyDatabaseService } from './services/dummy-database.service';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
 import { BreadcrumbComponent } from './components/breadcrumb/breadcrumb.component';
-import { NavigationComponent } from './components/navigation/navigation.component';
 import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
@@ -27,7 +26,6 @@ import { FooterComponent } from './components/footer/footer.component';
     AppComponent,
     HeaderComponent,
     BreadcrumbComponent,
-    NavigationComponent,
     FooterComponent
   ],
   imports: [

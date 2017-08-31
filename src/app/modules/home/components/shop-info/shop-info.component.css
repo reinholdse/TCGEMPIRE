@@ -1,67 +1,87 @@
 #shopIntroduction {
-  background: linear-gradient(100deg, #0D89C6, #38AEE8);
+  background: linear-gradient(100deg, #0D89C6, #5fbdec);
   color: white;
   padding-top: 30px;
   padding-bottom: 30px;
 }
 
-#shopIntroduction p {
-  max-width: 300px;
-  margin: 0 auto;
-}
-
 #shopIntroduction button {
-  margin: 12px 0;
+  margin: 10px 0;
 }
 
 @media(min-width: 576px) {
-  #shopIntroduction p {
-    max-width: 350px;
+  #shopIntroduction {
+    padding-top: 35px;
+    padding-bottom: 35px;
   }
 
   #shopIntroduction button {
-    margin: 14px 0;
+    margin: 12px 0;
   }
 }
 
 @media(min-width: 768px) {
-  #shopIntroduction p {
-    max-width: 400px;
+  #shopIntroduction {
+    padding-top: 42px;
+    padding-bottom: 42px;
   }
 }
 
 @media(min-width: 992px) {
+  #shopIntroduction {
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
 
+  #shopIntroduction button {
+    margin: 16px 0;
+  }
 }
 
 .cards {
-  // margin: 15px auto;
+  margin: 12px 0;
 }
 
-.cards .card {
-  width: 75px;
-  height: 110px;
+.card {
+  margin: 8px;
+  height: 100px;
   background-color: rgba(256, 256, 256, .9);
   border-radius: 8px;
+  border: none;
   color: rgba(0,0,0,.05);
   font-size: 68px;
   font-family: 'Roboto Slab', serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media(min-width: 576px) {
   .cards {
-    margin: 18px auto;
+    margin: 15px 0;
   }
 
-  .cards .card {
-    width: 80px;
+  .card {
+    margin: 10px;
     height: 120px;
   }
 }
 
-@media(min-width: 992px) {
+@media(min-width: 768px) {
+  .cards {
+    margin: 18px 0;
+  }
 
+  .card {
+    height: 130px;
+  }
+}
+
+@media(min-width: 992px) {
+  .cards {
+    margin: 22px 0;
+  }
+}
+
+@media(min-width: 1200px) {
+  .col-xl-offset-1 {
+    margin-left: 8.333333%;
+  }
 }
