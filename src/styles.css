@@ -66,8 +66,8 @@ h2 {
 .btn {
   font-size: 16px;
   font-weight: 300;
-  padding: 2px 16px;
-  border-radius: 14px;
+  padding: 4px 20px;
+  border-radius: 18px;
   border: none;
   transition: all .1s ease-in-out;
   cursor: pointer
@@ -80,8 +80,14 @@ h2 {
 }
 
 @media(min-width: 992px) {
-  .btm {
+  .btn {
     font-size: 20px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .btn {
+    font-size: 22px;
   }
 }
 

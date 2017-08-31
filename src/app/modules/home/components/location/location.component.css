@@ -1,0 +1,33 @@
+@media(max-width: 575px) {
+  .container {
+    padding: 0;
+  }
+}
+
+.location-icon > path {
+  fill: #38AEE8;
+}
+
+.address {
+  margin-top: 10px;
+}
+
+@media(min-width: 576px) {
+  .address {
+    margin-top: 12px;
+  }
+}
+
+.address > .location-icon {
+  height: 50px;
+}
+
+.address-text {
+  color: rgba(0,0,0,.5);
+  font-family: 'Roboto', serif;
+}
+
+.map {
+  margin-top: 26px;
+  position: relative;
+}

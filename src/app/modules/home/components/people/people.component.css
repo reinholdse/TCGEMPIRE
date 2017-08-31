@@ -5,26 +5,26 @@
 
 .people-descriptions {
   margin-top: 18px;
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 
 @media(min-width: 768px) {
   .people-descriptions {
-    margin-bottom: 26px;
+    margin-bottom: 22px;
   }
 }
 
 @media(min-width: 992px) {
   .people-descriptions {
     margin-top: 22px;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
   }
 }
 
 @media(min-width: 1200px) {
   .people-descriptions {
     margin-top: 25px;
-    margin-bottom: 34px;
+    margin-bottom: 30px;
   }
 }
 
@@ -41,8 +41,8 @@
 
 @media(min-width: 992px) {
   .people-description-head > img {
-    height: 120px;
-    width: 120px;
+    height: 100px;
+    width: 100px;
   }
 }
 
