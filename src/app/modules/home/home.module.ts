@@ -11,6 +11,7 @@ import { TheShopComponent } from './components/the-shop/the-shop.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FindUsComponent } from './components/find-us/find-us.component';
 import { FollowUsComponent } from './components/follow-us/follow-us.component';
+import { PhoneEmailLinkComponent } from './components/phone-email-link/phone-email-link.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FollowUsComponent } from './components/follow-us/follow-us.component';
     TheShopComponent,
     AboutUsComponent,
     FindUsComponent,
-    FollowUsComponent
+    FollowUsComponent,
+    PhoneEmailLinkComponent
   ],
   imports: [
     CommonModule,
