@@ -7,17 +7,19 @@ import { SharedModule } from '../shared/shared.module';
 
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { ShopInfoComponent } from './components/shop-info/shop-info.component';
-import { PeopleComponent } from './components/people/people.component';
-import { LocationComponent } from './components/location/location.component';
+import { TheShopComponent } from './components/the-shop/the-shop.component';
+import { AboutUsComponent } from './components/about-us/about-us.component';
+import { FindUsComponent } from './components/find-us/find-us.component';
+import { FollowUsComponent } from './components/follow-us/follow-us.component';
 
 @NgModule({
   declarations: [
     HomeComponent,
     BannerComponent,
-    ShopInfoComponent,
-    PeopleComponent,
-    LocationComponent
+    TheShopComponent,
+    AboutUsComponent,
+    FindUsComponent,
+    FollowUsComponent
   ],
   imports: [
     CommonModule,

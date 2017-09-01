@@ -2,6 +2,10 @@
   .container {
     padding: 0;
   }
+
+  .home-section {
+    padding-bottom: 0;
+  }
 }
 
 .location-icon > path {
@@ -27,7 +31,9 @@
   font-family: 'Roboto', serif;
 }
 
-.map {
-  margin-top: 26px;
-  position: relative;
+@media(max-width: 991px) {
+  .map {
+    margin-top: 26px;
+    position: relative;
+  }
 }
