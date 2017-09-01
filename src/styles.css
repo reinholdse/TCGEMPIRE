@@ -1,17 +1,29 @@
+html {
+  position: relative; /* For sticky footer */
+  min-height: 100%; /* For sticky footer */
+}
+
 body {
-  padding-top: 54px;
+  padding-top: 54px; /* Space for header */
+  padding-bottom: 90px; /* Space for footer */
   font-family: 'Roboto', sans-serif;
 }
 
 @media (min-width: 576px) {
   body {
-    padding-top: 68px;
+    padding-top: 68px;  /* Space for header */
+  }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-bottom: 80px; /* Space for footer */
   }
 }
 
 @media (min-width: 992px) {
   body {
-    padding-top: 80px;
+    padding-top: 80px;  /* Space for header */
   }
 }
 
@@ -200,4 +212,8 @@ h2 {
   .home-heading {
     margin-bottom: 25px;
   }
+}
+
+app-root {
+
 }
