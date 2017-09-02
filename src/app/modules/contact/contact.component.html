@@ -1,8 +1,40 @@
 <main>
+  <div class="page-heading text-center">
+    <h2>Contact</h2>
+  </div>
   <div class="container">
-    <div class="page-heading text-center">
-      <h2>Contact</h2>
+    <div class="row align-items-center justify-content-center text-center">
+      <div class="col-auto col-lg-5 order-lg-2">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h3>Location</h3>
+          <div class="address d-flex align-items-center">
+            <svg class="location-icon mr-4" xmlns="http://www.w3.org/2000/svg" viewBox="-575.485 4783.068 10.49 15.73">
+              <path d="M10.454,4.621a5.246,5.246,0,0,0-10.417,0A5.147,5.147,0,0,0,0,5.247,5.222,5.222,0,0,0,.563,7.614l.29.5L5.245,15.73,9.637,8.119l0,0,.288-.5h0a5.214,5.214,0,0,0,.563-2.367A4.675,4.675,0,0,0,10.454,4.621ZM5.245,8.477a3.23,3.23,0,1,1,3.229-3.23A3.229,3.229,0,0,1,5.245,8.477Z" transform="translate(-575.485 4783.068)"/>
+            </svg>
+            <p class="address-text text-left lead">Rua Filipe 21<br>1167-666 Lisboa<br>Portugal</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-lg-7 order-lg-1 map">
+        <img class="img-fluid" [src]="map_img_path" alt="">
+      </div>
     </div>
-    <shared-loader [text]="'Contact ...'"></shared-loader>
+  </div>
+
+  <div class="mt-10">
+    <a href="tel:666666666" class="phone-link btn-full-width d-flex justify-content-center align-items-center font-weight-light">
+      <svg class="phone-icon" xmlns="http://www.w3.org/2000/svg" viewBox="-576.597 4808.355 12 12">
+        <path class="cls-1" d="M6,0a6,6,0,1,0,6,6A6,6,0,0,0,6,0ZM8.843,8.787a1.32,1.32,0,0,1-1.071.49,3.434,3.434,0,0,1-1.018-.221A7.394,7.394,0,0,1,3.015,5.4,2.609,2.609,0,0,1,2.77,3.91c.062-.294.136-.409.5-.776.422-.422.482-.45.743-.352.113.043.2.122.674.6.862.869.862.866.281,1.457-.5.511-.492.472-.219.844A8.035,8.035,0,0,0,6.439,7.337c.262.177.244.184.706-.271.353-.347.409-.392.5-.408.255-.043.322,0,.962.635C9.456,8.132,9.465,8.183,8.843,8.787Z" transform="translate(-576.597 4808.355)"/>
+      </svg>
+      <span>666 666 666</span>
+    </a>
+    <a href="mailto:tcg.empire@gmail.com" class="email-link btn-full-width mt-2 mt-md-3 d-flex justify-content-center align-items-center font-weight-light"><span>tcg.empire@gmail.com</span></a>
+  </div>
+
+  <div class="container">
+    <div class="mt-10 mb-10">
+      <h3 class="text-center">Social media</h3>
+      <sm-links></sm-links>
+    </div>
   </div>
 </main>

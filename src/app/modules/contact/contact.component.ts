@@ -8,6 +8,7 @@ import { Breadcrumb, BreadcrumbService } from '../../services/breadcrumb.service
 })
 export class ContactComponent implements OnInit {
   private breadcrumbs: Breadcrumb[];
+  private map_img_path: string = 'assets/img/location-map.png';
 
   constructor(private breadcrumbService: BreadcrumbService) {
     this.breadcrumbs = [

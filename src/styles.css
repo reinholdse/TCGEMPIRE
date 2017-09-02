@@ -40,9 +40,17 @@ h2 {
   font-size: 48px;
 }
 
+h3 {
+  font-size: 36px;
+}
+
 @media(min-width: 768px) {
   h2 {
     font-size: 60px;
+  }
+
+  h3 {
+    font-size: 44px;
   }
 }
 
@@ -57,14 +65,14 @@ h2 {
 @media(min-width: 576px) {
   .page-heading {
     margin-top: 30px;
-    margin-bottom: 76px;
+    margin-bottom: 80px;
   }
 }
 
 @media(min-width: 768px) {
   .page-heading {
     margin-top: 40px;
-    margin-bottom: 92px;
+    margin-bottom: 100px;
   }
 }
 
@@ -179,6 +187,72 @@ h2 {
 .btn-secondary:hover:focus {
   color: #383838;
   background-color: #ffc933;
+}
+
+a.btn-full-width {
+  height: 114px;
+  width: 100%;
+  color: white;
+  font-size: 30px;
+  text-decoration: none;
+  transition: all .1s ease-in-out;
+}
+
+a.btn-full-width > .phone-icon {
+  width: 35px;
+  height: 35px;
+  margin-right: 12px;
+}
+
+a.btn-full-width > .phone-icon .cls-1 {
+  fill: rgba(256,256,256,.5);
+}
+
+/*a.btn-full-width.btn-full-width-turquois {
+  background: linear-gradient(100deg, #0DB8C6, #38E1E8);
+  background-size: calc(100% + 500px), 1px;
+  background-position: -500px;
+}
+
+a.btn-full-width.btn-full-width-blue {
+  background: linear-gradient(100deg, #0D89C6, #38AEE8);
+  background-size: calc(100% + 500px), 1px;
+  background-position: -500px;
+}
+
+a.btn-full-width:hover {
+  background-position: 0px;
+}*/
+
+@media(min-width: 992px) {
+  a.btn-full-width {
+    height: 140px;
+    font-size: 40px;
+  }
+
+  a.btn-full-width > .phone-icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 18px;
+  }
+}
+
+.mt-10 {
+  margin-top: 50px;
+}
+
+.mb-10 {
+  margin-bottom: 50px;
+}
+
+@media(min-width: 992px) {
+  .mt-10 {
+    margin-top: 80px;
+  }
+
+  .mb-10 {
+    margin-bottom: 80px;
+  }
 }
 
 .loader-container {
