@@ -1,10 +1,10 @@
 .social-link {
   position: relative;
+}
+
+.social-link > img {
   height: 40px;
   width: 40px;
-  border-radius: 20px;
-  background-color: #CCCCCC;
-  transition: all .1s ease-in-out;
 }
 
 .social-link:hover {
@@ -41,10 +41,6 @@
 
 /* To prevent poor hover state on mobile */
 @media(min-width: 768px) {
-  .social-link:hover {
-    background-color: #38AEE8;
-  }
-
   .social-link:hover > span,
   .social-link:hover:after {
     opacity: 1;
@@ -67,8 +63,10 @@
 @media(min-width: 992px) {
   .social-link {
     margin: 25px;
+  }
+
+  .social-link > img {
     height: 50px;
     width: 50px;
-    border-radius: 25px;
   }
 }

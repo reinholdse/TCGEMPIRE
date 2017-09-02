@@ -1,28 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13161 1107 40 40">
+<svg id="Group_950" data-name="Group 950" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-4686 3092 75 75">
   <defs>
     <style>
-      .cls-1, .cls-2 {
+      .cls-1 {
         fill: #fff;
       }
 
-      .cls-1 {
-        stroke: #95989a;
+      .cls-2 {
+        fill: #333;
       }
 
       .cls-3 {
-        fill: #aaa;
-      }
-
-      .cls-4 {
         clip-path: url(#clip-path);
       }
 
-      .cls-5 {
+      .cls-4 {
         clip-path: url(#clip-path-2);
       }
     </style>
     <clipPath id="clip-path">
-      <rect id="Rectangle_855" data-name="Rectangle 855" class="cls-1" width="22.4" height="26.667"/>
+      <path id="Path_143" data-name="Path 143" class="cls-1" d="M.5.5h41v49H.5Z" transform="translate(757 477)"/>
     </clipPath>
     <clipPath id="clip-path-2">
       <rect id="_version_:_1.5.0_viewSource_:_x_:_0_y_:_0_width_:_154_height_:_154_resources_:_clipPaths_:_filters_:_" data-name="{
@@ -36,22 +32,23 @@
 	&quot;resources&quot;: {
 		&quot;clipPaths&quot;: {},
 		&quot;filters&quot;: {},
-		" class="cls-2" width="26.667" height="26.667"/>
+		" class="cls-1" width="50" height="50"/>
     </clipPath>
   </defs>
-  <g id="Group_875" data-name="Group 875" transform="translate(-14055 731)">
-    <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-3" cx="20" cy="20" r="20" transform="translate(894 376)"/>
-    <g id="Mask_Group_25" data-name="Mask Group 25" class="cls-4" transform="translate(901.467 381.333)">
-      <g id="Group_723" data-name="Group 723" transform="translate(-4.267)">
-        <rect id="Rectangle_853" data-name="Rectangle 853" class="cls-2" width="21.333" height="24.533" transform="translate(3.733 1.6)"/>
-        <g id="Group_716" data-name="Group 716">
-          <g id="Mask_Group_24" data-name="Mask Group 24" class="cls-5">
+  <g id="Group_948" data-name="Group 948" transform="translate(-5580 2716)">
+    <circle id="Ellipse_21" data-name="Ellipse 21" class="cls-2" cx="37.5" cy="37.5" r="37.5" transform="translate(894 376)"/>
+    <g id="Mask_Group_38" data-name="Mask Group 38" class="cls-3" transform="translate(151 -91)">
+      <g id="Group_723" data-name="Group 723" transform="translate(143 -1012)">
+        <rect id="Rectangle_853" data-name="Rectangle 853" class="cls-1" width="40" height="46" transform="translate(613 1492)"/>
+        <g id="Group_716" data-name="Group 716" transform="translate(5498 -1646)">
+          <g id="Mask_Group_24" data-name="Mask Group 24" class="cls-4" transform="translate(-4892 3135)">
             <g id="facebook-logo-gray">
-              <path id="Path_103" data-name="Path 103" class="cls-3" d="M0-140.667v13.333H14.2v-10.39H10.563v-4.156H14.2v-2.3c0-2.234.017-2.355.519-3.359.987-1.974,2.407-2.649,5.506-2.649a11.705,11.705,0,0,1,2.251.139c.156.1.208.623.173,1.957l-.052,1.8-1.472.052a13.973,13.973,0,0,0-1.836.121c-.623.139-.935,1.091-.935,2.753v1.489h3.983v.641a18.665,18.665,0,0,1-.208,2.078l-.208,1.437H18.355v10.39h8.312V-154H0Z" transform="translate(0 154)"/>
+              <path id="Path_103" data-name="Path 103" class="cls-2" d="M0-129v25H26.623v-19.481H19.805v-7.792h6.818v-4.318c0-4.188.032-4.416.974-6.3,1.851-3.7,4.513-4.968,10.325-4.968a21.948,21.948,0,0,1,4.221.26c.292.195.39,1.169.325,3.669l-.1,3.377-2.76.1a26.2,26.2,0,0,0-3.442.227c-1.169.26-1.753,2.045-1.753,5.162v2.792h7.468v1.2a35,35,0,0,1-.39,3.9l-.39,2.695H34.416V-104H50v-50H0Z" transform="translate(0 154)"/>
             </g>
           </g>
         </g>
       </g>
     </g>
   </g>
+  <rect id="Rectangle_955" data-name="Rectangle 955" class="cls-2" width="14" height="50" transform="translate(-4675 3104)"/>
 </svg>
