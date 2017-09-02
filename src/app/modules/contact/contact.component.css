@@ -50,8 +50,11 @@
   background-position: -500px;
 }
 
-.phone-link:hover {
-  background-position: 0;
+/* To prevent poor hover state on mobile */
+@media(min-width: 992px) {
+  .phone-link:hover {
+    background-position: 0;
+  }
 }
 
 /*.phone-icon {
@@ -78,6 +81,9 @@
   background-position: -500px;
 }
 
-.email-link:hover {
-  background-position: 0;
+/* To prevent poor hover state on mobile */
+@media(min-width: 992px) {
+  .email-link:hover {
+    background-position: 0;
+  }
 }

@@ -172,21 +172,26 @@ h3 {
   background-color: #FF5555;
 }
 
-.btn-highlight:hover {
-  background-color: #F2384D;
-}
-
 .btn-secondary,
 .btn-secondary:focus,
-.btn-secondary:active:focus {
+.btn-secondary:active:focus,
+.btn-secondary:hover,
+.btn-secondary:hover:focus {
   color: #383838;
   background-color: #FFD972
 }
 
-.btn-secondary:hover,
-.btn-secondary:hover:focus {
-  color: #383838;
-  background-color: #ffc933;
+/* To prevent poor hover state on mobile */
+@media(min-width: 768px) {
+  .btn-highlight:hover {
+    background-color: #F2384D;
+  }
+
+  .btn-secondary:hover,
+  .btn-secondary:hover:focus {
+    color: #383838;
+    background-color: #ffc933;
+  }
 }
 
 a.btn-full-width {

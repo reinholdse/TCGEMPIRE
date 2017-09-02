@@ -4,6 +4,9 @@
   background-position: -500px;
 }
 
-#phoneEmailLink > .btn-full-width:hover {
-  background-position: 0px;
+/* To prevent poor hover state on mobile */
+@media(min-width: 992px) {
+  #phoneEmailLink > .btn-full-width:hover {
+    background-position: 0px;
+  }
 }

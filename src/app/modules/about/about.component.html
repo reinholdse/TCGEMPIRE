@@ -1,8 +1,49 @@
 <main>
-  <div class="container">
-    <div class="page-heading text-center">
-      <h2>About</h2>
+  <div class="page-heading text-center">
+    <h2>About</h2>
+  </div>
+  <div class="banner">
+    <div class="container text-center h-100 d-flex flex-column justify-content-around">
+      <h3>The shop</h3>
+      <p class="lead mt-4">Our shop is not only a store<br>but a meeting point.</p>
+      <p class="lead mt-2">Everybody who shares the passion<br>is invited and very welcome to come in.</p>
     </div>
-    <shared-loader [text]="'About ...'"></shared-loader>
+  </div>
+  <div class="people container text-center">
+    <h3>The people</h3>
+    <div class="row justify-content-center">
+      <p class="lead font-weight-light col-10 col-md-8 my-4 my-md-5">We love trading card games and are happy to  welcome anyone swinging by our shop.</p>
+      <div class="col-10 col-md-8 col-lg-7 people-descriptions">
+        <div class="row justify-content-center">
+          <div class="col-12 col-sm-4">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-5 col-sm-12 mb-sm-2 people-description-head text-center">
+                <img [src]="people_img_paths[0]" alt="">
+                <p class="lead name">Filipe</p>
+              </div>
+              <p class="col-5 col-sm-12 font-weight-normal people-description-body">Has the most stylish hair in the community.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-5 col-sm-12 mb-sm-2 people-description-head text-center">
+                <img [src]="people_img_paths[1]" alt="">
+                <p class="lead name">Helena</p>
+              </div>
+              <p class="col-5 col-sm-12 font-weight-normal people-description-body">Always gets into awkward situations with Stefan.</p>
+            </div>
+          </div>
+          <div class="col-12 col-sm-4 mt-3 mt-sm-0">
+            <div class="row justify-content-center align-items-center">
+              <div class="col-5 col-sm-12 mb-sm-2 people-description-head text-center">
+                <img [src]="people_img_paths[2]" alt="">
+                <p class="lead name">Stefan</p>
+              </div>
+              <p class="col-5 col-sm-12 font-weight-normal people-description-body">Exhibits an unexcelled grumpyness each day.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </main>

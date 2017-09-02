@@ -7,6 +7,10 @@
   transition: all .1s ease-in-out;
 }
 
+.social-link:hover {
+  cursor: pointer;
+}
+
 .social-link:after {
   content: '';
   opacity: 0;
@@ -35,14 +39,16 @@
   box-shadow: 0 2px 2px 0px rgba(0,0,0,.1);
 }
 
-.social-link:hover {
-  background-color: #38AEE8;
-  cursor: pointer;
-}
+/* To prevent poor hover state on mobile */
+@media(min-width: 768px) {
+  .social-link:hover {
+    background-color: #38AEE8;
+  }
 
-.social-link:hover > span,
-.social-link:hover:after {
-  opacity: 1;
+  .social-link:hover > span,
+  .social-link:hover:after {
+    opacity: 1;
+  }
 }
 
 @media(max-width: 575px) {
