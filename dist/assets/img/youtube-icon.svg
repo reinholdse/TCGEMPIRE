@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="-13401 1107 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #333;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="_version_:_1.5.0_viewSource_:_x_:_0_y_:_0_width_:_154_height_:_154_resources_:_clipPaths_:_filters_:_" data-name="{
+	&quot;version&quot;: &quot;1.5.0&quot;,
+	&quot;viewSource&quot;: {
+		&quot;x&quot;: 0,
+		&quot;y&quot;: 0,
+		&quot;width&quot;: 154,
+		&quot;height&quot;: 154
+	},
+	&quot;resources&quot;: {
+		&quot;clipPaths&quot;: {},
+		&quot;filters&quot;: {},
+		" class="cls-1" width="26.667" height="26.667"/>
+    </clipPath>
+  </defs>
+  <g id="Group_870" data-name="Group 870" transform="translate(-13939 748)">
+    <circle id="Ellipse_19" data-name="Ellipse 19" class="cls-2" cx="20" cy="20" r="20" transform="translate(538 359)"/>
+    <rect id="Rectangle_852" data-name="Rectangle 852" class="cls-1" width="23.467" height="23.467" transform="translate(546 367)"/>
+    <g id="Mask_Group_22" data-name="Mask Group 22" class="cls-3" transform="translate(544.4 365.4)">
+      <g id="youtube-logo-icon">
+        <path id="Path_98" data-name="Path 98" class="cls-2" d="M0-140.667v13.333H26.667V-154H0Zm21.126-6.528c1.333.468,1.732,1.8,1.853,6.009.121,4.4-.346,6.3-1.7,6.961-.519.26-1.351.329-5.524.416-2.719.052-6.165.035-7.654-.052-2.545-.139-2.753-.173-3.186-.571a4.167,4.167,0,0,1-.623-.762c-.883-1.628-1.056-7.325-.312-9.991a2.958,2.958,0,0,1,1.558-2.009A137.627,137.627,0,0,1,21.126-147.195Z" transform="translate(0 154)"/>
+        <path id="Path_99" data-name="Path 99" class="cls-2" d="M66-93.437v3.463l.918-.589c.485-.329,1.662-1.074,2.6-1.68a6.711,6.711,0,0,0,1.645-1.229c-.035-.069-1.195-.883-2.6-1.784L66-96.9Z" transform="translate(-54.571 106.787)"/>
+      </g>
+    </g>
+  </g>
+</svg>
