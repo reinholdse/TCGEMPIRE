@@ -106,7 +106,9 @@ nav {
     left: 0;
     right: 0;
     text-align: center;
-    background-color: #FFD972;
+    /*background-color: #FFD972;*/
+    /*background: linear-gradient(180deg, white, rgba(256,256,256,.97));*/
+    background-color: #fafafa;
   }
 
   .navbar-nav > .nav-item {

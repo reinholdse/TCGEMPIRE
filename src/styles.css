@@ -46,6 +46,52 @@ h2 {
   }
 }
 
+.page-heading {
+  margin-top: 24px;
+  margin-bottom: 70px; /* Accounting for after element's offset */
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+@media(min-width: 576px) {
+  .page-heading {
+    margin-top: 30px;
+    margin-bottom: 76px;
+  }
+}
+
+@media(min-width: 768px) {
+  .page-heading {
+    margin-top: 40px;
+    margin-bottom: 92px;
+  }
+}
+
+.page-heading:after {
+  content: '';
+  height: 4px;
+  width: 120px;
+  background-color: #FF5555;
+  position: absolute;
+  bottom: -24px;
+}
+
+@media(min-width: 576px) {
+  .page-heading:after {
+    bottom: -30px;
+  }
+}
+
+@media(min-width: 768px) {
+  .page-heading:after {
+    height: 5px;
+    width: 150px;
+    bottom: -36px;
+  }
+}
+
+
 .lead {
   font-family: 'Roboto Slab', serif;
   font-size: 1rem;
@@ -212,8 +258,4 @@ h2 {
   .home-heading {
     margin-bottom: 25px;
   }
-}
-
-app-root {
-
 }
