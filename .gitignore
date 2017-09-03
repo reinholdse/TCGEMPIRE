@@ -88,5 +88,7 @@ typings/
 # dotenv environment variables file
 .env
 
+# Angular 2 dist folder
+dist/
 
 # End of https://www.gitignore.io/api/node,macos
