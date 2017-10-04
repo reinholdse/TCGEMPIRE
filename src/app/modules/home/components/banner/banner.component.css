@@ -1,6 +1,6 @@
 #banner {
   background-color: #999999;
-  background-image: url("/assets/img/banner_img_xs.png");
+  background-image: url("wp-content/themes/angular/dist/assets/img/banner_img_xs.png");
   background-position: 50% 50%;
   height: 240px;
   width: 100%;
@@ -15,7 +15,7 @@
 
 @media (min-width: 576px) {
   #banner {
-    background-image: url("/assets/img/banner_img_sm.png");
+    background-image: url("wp-content/themes/angular/dist/assets/img/banner_img_sm.png");
     height: 300px;
     padding: 45px 0;
   }
@@ -28,7 +28,7 @@
 
 @media (min-width: 768px) {
   #banner {
-    background-image: url("/assets/img/banner_img_md.png");
+    background-image: url("wp-content/themes/angular/dist/assets/img/banner_img_md.png");
     height: 356px;
     padding: 72px 0;
   }
@@ -36,7 +36,7 @@
 
 @media (min-width: 992px) {
   #banner {
-    background-image: url("/assets/img/banner_img_lg.png");
+    background-image: url("wp-content/themes/angular/dist/assets/img/banner_img_lg.png");
     padding: 68px 0;
   }
 
@@ -47,7 +47,7 @@
 
 @media(min-width: 1200px) {
   #banner {
-    background-image: url("/assets/img/banner_img_xl.png");
+    background-image: url("wp-content/themes/angular/dist/assets/img/banner_img_xl.png");
   }
 }
 
