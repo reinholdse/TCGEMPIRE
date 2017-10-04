@@ -11,9 +11,9 @@ export class FooterComponent implements OnInit {
   tele_img_path: string;
 
   constructor() {
-    this.pikachu_img_path = 'assets/img/pikachu.svg';
-    this.location_img_path = 'assets/img/location.svg';
-    this.tele_img_path = 'assets/img/tele.svg';
+    this.pikachu_img_path = 'wp-content/themes/angular/dist/assets/img/pikachu.svg';
+    this.location_img_path = 'wp-content/themes/angular/dist/assets/img/location.svg';
+    this.tele_img_path = 'wp-content/themes/angular/dist/assets/img/tele.svg';
   }
 
   ngOnInit() {

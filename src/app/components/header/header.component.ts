@@ -7,7 +7,7 @@ import { Router, NavigationEnd } from '@angular/router';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-  logo_big_path: string = 'assets/img/logo_big.svg';
+  logo_big_path: string = 'wp-content/themes/angular/dist/assets/img/logo_big.svg';
 
   constructor() { }
 
