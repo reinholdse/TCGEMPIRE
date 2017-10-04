@@ -89,6 +89,6 @@ typings/
 .env
 
 # Angular 2 dist folder
-dist/
+# dist/
 
 # End of https://www.gitignore.io/api/node,macos
