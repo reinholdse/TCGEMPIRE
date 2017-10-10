@@ -1,5 +1,6 @@
-
 import { Component, OnInit } from '@angular/core';
+
+import { environment } from '../../../../../environments/environment';
 
 @Component({
   selector: 'home-about-us',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
-  private people_img_paths: string[] = ['wp-content/themes/angular/dist/assets/img/people1.png', 'wp-content/themes/angular/dist/assets/img/people2.png', 'wp-content/themes/angular/dist/assets/img/people3.png'];
+  private people_img_paths: string[] = [
+    environment.assetsURI + '/assets/img/people1.png',
+    environment.assetsURI + '/assets/img/people2.png',
+    environment.assetsURI + '/assets/img/people3.png'
+  ];
 
   constructor() { }
 

@@ -1,3 +1,4 @@
 export const environment = {
-  production: true
+  production: true,
+  assetsURI: 'wp-content/themes/angular/dist'
 };
