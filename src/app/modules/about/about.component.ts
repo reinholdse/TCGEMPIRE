@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Breadcrumb, BreadcrumbService } from '../../services/breadcrumb.service';
 
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'about',
   templateUrl: './about.component.html',
@@ -8,7 +10,11 @@ import { Breadcrumb, BreadcrumbService } from '../../services/breadcrumb.service
 })
 export class AboutComponent implements OnInit {
   private breadcrumbs: Breadcrumb[];
-  private people_img_paths: string[] = ['wp-content/themes/angular/dist/assets/img/people1.png', 'wp-content/themes/angular/dist/assets/img/people2.png', 'wp-content/themes/angular/dist/assets/img/people3.png'];
+  private people_img_paths: string[] = [
+    environment.assetsURI + '/assets/img/people1.png',
+    environment.assetsURI + '/assets/img/people2.png',
+    environment.assetsURI + '/assets/img/people3.png'
+  ];
 
   constructor(private breadcrumbService: BreadcrumbService) {
     this.breadcrumbs = [{ label: 'About', url: '/about' }];

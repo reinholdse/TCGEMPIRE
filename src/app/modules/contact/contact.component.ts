@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Breadcrumb, BreadcrumbService } from '../../services/breadcrumb.service';
 
+import { environment } from '../../../environments/environment';
+
 @Component({
   selector: 'contact',
   templateUrl: './contact.component.html',
@@ -8,7 +10,7 @@ import { Breadcrumb, BreadcrumbService } from '../../services/breadcrumb.service
 })
 export class ContactComponent implements OnInit {
   private breadcrumbs: Breadcrumb[];
-  private map_img_path: string = 'wp-content/themes/angular/dist/assets/img/location-map.png';
+  private map_img_path: string = environment.assetsURI + '/assets/img/location-map.png';
 
   constructor(private breadcrumbService: BreadcrumbService) {
     this.breadcrumbs = [

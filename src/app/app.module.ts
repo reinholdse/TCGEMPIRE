@@ -15,6 +15,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { BreadcrumbService } from './services/breadcrumb.service';
 import { DummyDatabaseService } from './services/dummy-database.service';
+import { BlogApiService } from './services/blog-api.service';
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -43,7 +44,8 @@ import { FooterComponent } from './components/footer/footer.component';
   ],
   providers: [
     BreadcrumbService,
-    DummyDatabaseService
+    DummyDatabaseService,
+    BlogApiService
   ],
   bootstrap: [AppComponent]
 })
