@@ -1,3 +1,16 @@
-<main class="container">
-  <shared-loader [text]="'Blog Article ...'"></shared-loader>
+<main>
+  <div class="container">
+    <div class="page-heading text-center d-flex flex-column align-items-center">
+      <h2>{{ article?.title }}</h2>
+      <span class="page-heading-underline"></span>
+      <p class="article-author">{{ article?.author }}</p>
+      <p class="article-date">{{ article?.date.toDateString() }}</p>
+    </div>
+    <div class="article-body d-flex flex-column align-items-center">
+      <div class="article-excerpt" [innerHtml]="article?.excerpt">
+      </div>
+      <div class="article-content" [innerHtml]="article?.content">
+      </div>
+    </div>
+  </div>
 </main>

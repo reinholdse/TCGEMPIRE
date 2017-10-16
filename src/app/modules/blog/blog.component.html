@@ -4,6 +4,10 @@
       <h2>Blog</h2>
       <span class="page-heading-underline"></span>
     </div>
-    <coming-soon></coming-soon>
+    <div class="article-list">
+      <div *ngFor="let article of articles" class="article-list-element">
+        {{ article.title }}
+      </div>
+    </div>
   </div>
 </main>

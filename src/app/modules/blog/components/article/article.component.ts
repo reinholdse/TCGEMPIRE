@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 // import { Article, DummyDatabaseService } from '../../../../services/dummy-database.service';
 import { Article, BlogApiService } from '../../../../services/blog-api.service';
@@ -9,7 +9,8 @@ import 'rxjs/add/operator/switchMap';
 @Component({
   selector: 'blog-article',
   templateUrl: './article.component.html',
-  styleUrls: ['./article.component.css']
+  styleUrls: ['./article.component.css'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class ArticleComponent implements OnInit {
   private breadcrumbs: Breadcrumb[];
@@ -17,7 +18,7 @@ export class ArticleComponent implements OnInit {
 
   constructor(
     private breadcrumbService: BreadcrumbService,
-    private blogService: BlogApiService,
+    private blogApiService: BlogApiService,
     private route: ActivatedRoute,
     private router: Router
   ) {
@@ -28,16 +29,13 @@ export class ArticleComponent implements OnInit {
 
   ngOnInit() {
     this.route.paramMap
-      .switchMap((params: ParamMap) => this.blogService.getArticle(params.get('slug')))
+      .switchMap((params: ParamMap) => this.blogApiService.getArticleBySlug(params.get('slug')))
       .subscribe(
         (article: Article) => {
-          if (article) {
-            this.breadcrumbs.push({ label: article.title.rendered, url: '/blog/' + article.slug });
-            this.article = article;
-          } else {
-            this.router.navigate(["/page-not-found"]);
-          }
-        }
+          this.breadcrumbs.push({ label: article.title, url: '/blog/' + article.slug });
+          this.article = article;
+        },
+        ((error: any) => this.router.navigate(["/page-not-found"]))
       );
     this.breadcrumbService.setBreadcrumbs(this.breadcrumbs);
   }

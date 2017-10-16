@@ -1,0 +1,130 @@
+.article-author {
+  margin-top: 20px;
+  color: #989898;
+  font-size: 0.9em;
+}
+
+.article-date {
+  color: #989898;
+  font-weight: 100;
+  font-size: 0.8em;
+}
+
+@media(min-width: 576px) {
+  .article-author {
+    margin-top: 26px;
+    font-size: 1em;
+  }
+
+  .article-date {
+    font-size: .85em;
+  }
+}
+
+@media(min-width: 768px) {
+  .article-author {
+    margin-top: 32px;
+    font-size: 1.1em;
+  }
+
+  .article-date {
+    font-size: .95em;
+  }
+}
+
+@media(min-width: 992px) {
+  .article-author {
+    margin-top: 40px;
+    font-size: 1.2em;
+  }
+
+  .article-date {
+    font-size: 1em;
+  }
+}
+
+.article-body {
+  max-width: 80%;
+  text-align: justify;
+  margin: 0 auto;
+  line-height: 200%;
+  padding-bottom: 35px;
+  /*font-family: 'Roboto Slab', serif;*/
+}
+
+@media(min-width: 576px) {
+  .article-body {
+    max-width: 75%;
+    font-size: 1.05em;
+    padding-bottom: 45px;
+  }
+}
+
+@media(min-width: 768px) {
+  .article-body {
+    max-width: 70%;
+    font-size: 1.1em;
+    padding-bottom: 65px;
+  }
+}
+
+@media(min-width: 992px) {
+  .article-body {
+    max-width: 60%;
+    font-size: 1.2em;
+  }
+}
+
+@media(min-width: 1200px) {
+  .article-body {
+    max-width: 55%;
+  }
+}
+
+.article-body p {
+  margin-bottom: 30px;
+}
+
+/*.article-body p::selection {
+  background: rgba(255, 217, 114, .2);
+}
+
+.article-body p::-moz-seletion {
+  background: rgba(255, 217, 114, .2);
+}*/
+
+.article-body a {
+  color: #38AEE8;
+  text-decoration: none;
+  position: relative;
+}
+
+@media(min-width: 768px) {
+  .article-body a:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    position: absolute;
+    bottom: -2px;
+    left: calc(50% + 1px);
+    background-color: #38AEE8;
+    transition: left .1s ease-in-out, width .1s ease-in-out;
+  }
+
+  .article-body a:hover:after {
+    width: calc(100% + 2px);
+    left: -1px;
+  }
+}
+
+
+.article-excerpt {
+  font-size: 1.1em;
+  font-weight: 400;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
+
+.article-content {
+  font-weight: 300;
+}
