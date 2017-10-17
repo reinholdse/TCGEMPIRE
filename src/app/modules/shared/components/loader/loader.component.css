@@ -10,7 +10,7 @@
 
 .loader-container .loader {
   border: 3px solid #F3F3F3;
-  border-top: 3px solid rgba(56, 174, 232, .85);
+  border-top: 3px solid #CCCCCC;
   border-radius: 50%;
   width: 60px;
   height: 60px;

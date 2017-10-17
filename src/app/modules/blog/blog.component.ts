@@ -2,6 +2,8 @@ import { Component, OnInit,ViewEncapsulation } from '@angular/core';
 import { Breadcrumb, BreadcrumbService } from '../../services/breadcrumb.service';
 import { Article, BlogApiService } from '../../services/blog-api.service';
 
+import { Observable } from 'rxjs/Rx';
+
 @Component({
   selector: 'blog',
   templateUrl: './blog.component.html',
@@ -19,6 +21,7 @@ export class BlogComponent implements OnInit {
         (articles: Article[]) => this.articles = articles,
         (error: any) => console.log('Ostrich went wrong here!') // Ostrich method!
       )
+    // this.articles = this.blogApiService.getArticles();
   }
 
   ngOnInit() {

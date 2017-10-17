@@ -7,21 +7,6 @@ import 'rxjs/add/operator/catch';
 
 import { environment } from '../../environments/environment';
 
-export interface OldArticle {
-  title: {
-    rendered: string
-  },
-  content: {
-    rendered: string
-  },
-  excerpt: {
-    rendered: string
-  },
-  author: number,
-  id: number,
-  slug: string
-}
-
 export interface Article {
   id: number,
   slug: string,

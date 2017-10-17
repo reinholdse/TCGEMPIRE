@@ -1,16 +1,19 @@
 <main>
-  <div class="container">
+  <div *ngIf="article; else loading" class="container">
     <div class="page-heading text-center d-flex flex-column align-items-center">
-      <h2>{{ article?.title }}</h2>
+      <h2>{{ article.title }}</h2>
       <span class="page-heading-underline"></span>
-      <p class="article-author">{{ article?.author }}</p>
-      <p class="article-date">{{ article?.date.toDateString() }}</p>
+      <p class="article-author">{{ article.author }}</p>
+      <p class="article-date">{{ article.date.toDateString() }}</p>
     </div>
     <div class="article-body d-flex flex-column align-items-center">
-      <div class="article-excerpt" [innerHtml]="article?.excerpt">
+      <div class="article-excerpt" [innerHtml]="article.excerpt">
       </div>
-      <div class="article-content" [innerHtml]="article?.content">
+      <div class="article-content" [innerHtml]="article.content">
       </div>
     </div>
   </div>
+  <ng-template class="container" #loading>
+    <shared-loader></shared-loader>
+  </ng-template>
 </main>

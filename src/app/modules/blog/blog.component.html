@@ -4,7 +4,7 @@
       <h2>Blog</h2>
       <span class="page-heading-underline"></span>
     </div>
-    <div class="post-list">
+    <div *ngIf="articles; else loading" class="post-list">
       <div *ngFor="let article of articles" routerLink="/blog/{{ article.slug }}" class="post">
         <div class="d-flex post-meta">
           <span class="post-author mr-3">{{ article.author }}</span>
@@ -16,5 +16,8 @@
         </p>
       </div>
     </div>
+    <ng-template #loading>
+      <shared-loader></shared-loader>
+    </ng-template>
   </div>
 </main>

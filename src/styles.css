@@ -1,6 +1,6 @@
 html {
   position: relative; /* For sticky footer */
-  min-height: 100%; /* For sticky footer */
+  min-height: 101vh; /* For sticky footer */
 }
 
 body {
