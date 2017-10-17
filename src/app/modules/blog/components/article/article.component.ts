@@ -32,8 +32,12 @@ export class ArticleComponent implements OnInit {
       .switchMap((params: ParamMap) => this.blogApiService.getArticleBySlug(params.get('slug')))
       .subscribe(
         (article: Article) => {
-          this.breadcrumbs.push({ label: article.title, url: '/blog/' + article.slug });
-          this.article = article;
+          if (article) {
+            this.breadcrumbs.push({ label: article.title, url: '/blog/' + article.slug });
+            this.article = article;
+          } else {
+            this.router.navigate(["/page-not-found"]);
+          }
         },
         ((error: any) => this.router.navigate(["/page-not-found"]))
       );
