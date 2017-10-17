@@ -10,6 +10,7 @@ import { BlogModule } from './modules/blog/blog.module';
 import { EventsModule } from './modules/events/events.module';
 import { HomeModule } from './modules/home/home.module';
 import { ErrorsModule } from './modules/errors/errors.module';
+import { SharedModule } from './modules/shared/shared.module';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -40,6 +41,7 @@ import { FooterComponent } from './components/footer/footer.component';
     EventsModule,
     HomeModule,
     ErrorsModule,
+    SharedModule,
     AppRoutingModule
   ],
   providers: [

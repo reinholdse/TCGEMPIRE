@@ -1,0 +1,153 @@
+.post-list {
+  margin-bottom: 70px;
+  max-width: 95%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media(min-width: 576px) {
+  .post-list {
+    margin-bottom: 80px;
+  }
+}
+
+@media(min-width: 768px) {
+  .post-list {
+    margin-bottom: 100px;
+  }
+}
+
+@media(min-width: 992px) {
+  .post-list {
+    max-width: 90%;
+  }
+}
+
+@media(min-width: 1200px) {
+  .post-list {
+    max-width: 80%;
+  }
+}
+
+.post:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.post {
+  padding-left: 15px;
+  border-left: 6px solid #F5F5F5;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+}
+
+@media(min-width: 576px) {
+  .post {
+    padding-left: 18px;
+    border-left-width: 6px;
+  }
+}
+
+@media(min-width: 768px) {
+  .post {
+    padding-left: 20px;
+    border-left-width: 6px;
+  }
+}
+
+@media(min-width: 992px) {
+  .post {
+    padding-left: 30px;
+    border-left-width: 8px;
+  }
+}
+
+@media(min-width: 1200px) {
+  .post {
+    padding-left: 40px;
+    border-left-width: 10px;
+  }
+}
+
+.post h3 {
+  color: #38AEE8;
+  transition: color .1s ease-in-out;
+}
+
+@media(min-width: 768px) {
+  .post h3 {
+    max-width: 90%;
+  }
+}
+
+/* Hover Effect */
+.post:hover {
+  cursor: pointer;
+}
+
+@media(min-width: 768px) {
+  .post:hover {
+    border-left-color: #38AEE8;
+  }
+
+  .post:hover h3 {
+    color: black;
+  }
+}
+
+.post-author,
+.post-date {
+  color: #989898;
+}
+
+.post-author {
+  font-weight: 300;
+}
+
+.post-date {
+  font-weight: 100;
+}
+
+@media(min-width: 576px) {
+  .post-author,
+  .post-date {
+    font-size: 1.05em;
+  }
+}
+
+@media(min-width: 768px) {
+  .post-author,
+  .post-date {
+    font-size: 1.08em;;
+  }
+}
+
+@media(min-width: 992px) {
+  .post-author,
+  .post-date {
+    font-size: 1.1em;
+  }
+}
+
+.post-excerpt {
+  font-size: 1.05em;
+  text-align: justify;
+  font-weight: 300;
+}
+
+@media(min-width: 576px) {
+  .post-excerpt {
+    font-size: 1.1em;
+  }
+}
+
+@media(min-width: 768px) {
+  .post-excerpt {
+    font-size: 1.15em;;
+  }
+}
+
+@media(min-width: 992px) {
+  .post-excerpt {
+    font-size: 1.2em;
+  }
+}

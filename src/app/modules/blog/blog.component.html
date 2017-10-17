@@ -4,9 +4,16 @@
       <h2>Blog</h2>
       <span class="page-heading-underline"></span>
     </div>
-    <div class="article-list">
-      <div *ngFor="let article of articles" class="article-list-element">
-        {{ article.title }}
+    <div class="post-list">
+      <div *ngFor="let article of articles" routerLink="/blog/{{ article.slug }}" class="post">
+        <div class="d-flex post-meta">
+          <span class="post-author mr-3">{{ article.author }}</span>
+          <span class="post-date">{{ article.date.toDateString() }}</span>
+        </div>
+        <h3>{{ article.title }}</h3>
+        <p class="post-excerpt mt-3 d-none d-md-block">
+          {{ article.excerpt | stripHtml | restrictLength : 180 }}
+        </p>
       </div>
     </div>
   </div>

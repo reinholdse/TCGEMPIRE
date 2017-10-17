@@ -5,11 +5,16 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { SocialMediaLinksComponent } from './components/sm-links/sm-links.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 
+import { RestrictLengthPipe } from '../../pipes/restrict-length.pipe';
+import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
+
 @NgModule({
   declarations: [
     LoaderComponent,
     SocialMediaLinksComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    RestrictLengthPipe,
+    StripHtmlPipe
   ],
   imports: [
     CommonModule
@@ -17,7 +22,9 @@ import { ComingSoonComponent } from './components/coming-soon/coming-soon.compon
   exports: [
     LoaderComponent,
     SocialMediaLinksComponent,
-    ComingSoonComponent
+    ComingSoonComponent,
+    RestrictLengthPipe,
+    StripHtmlPipe
   ]
 })
 export class SharedModule { }
