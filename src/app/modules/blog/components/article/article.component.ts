@@ -1,6 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
-// import { Article, DummyDatabaseService } from '../../../../services/dummy-database.service';
 import { Article, BlogApiService } from '../../../../services/blog-api.service';
 import { Breadcrumb, BreadcrumbService } from '../../../../services/breadcrumb.service';
 
