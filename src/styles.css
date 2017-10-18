@@ -1,6 +1,12 @@
 html {
   position: relative; /* For sticky footer */
-  min-height: 101vh; /* For sticky footer */
+  min-height: calc(100vh + 90px); /* For sticky footer */
+}
+
+@media(min-width: 768px) {
+  html {
+    min-height: calc(100vh + 80px)
+  }
 }
 
 body {
