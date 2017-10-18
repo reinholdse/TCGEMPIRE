@@ -1,5 +1,5 @@
 <main>
-  <div *ngIf="article; else loading" class="container">
+  <div *ngIf="article" class="container">
     <div class="page-heading text-center d-flex flex-column align-items-center">
       <h2>{{ article.title }}</h2>
       <span class="page-heading-underline"></span>
@@ -13,7 +13,4 @@
       </div>
     </div>
   </div>
-  <ng-template class="container" #loading>
-    <shared-loader></shared-loader>
-  </ng-template>
 </main>
