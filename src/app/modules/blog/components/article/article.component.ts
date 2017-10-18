@@ -1,9 +1,10 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit, OnDestroy, ViewEncapsulation } from '@angular/core';
 import { Router, ActivatedRoute, ParamMap } from '@angular/router';
 import { Article, BlogApiService } from '../../../../services/blog-api.service';
 import { Breadcrumb, BreadcrumbService } from '../../../../services/breadcrumb.service';
 
 import 'rxjs/add/operator/switchMap';
+import { Subscription } from 'rxjs/Rx';
 
 @Component({
   selector: 'blog-article',
@@ -11,9 +12,10 @@ import 'rxjs/add/operator/switchMap';
   styleUrls: ['./article.component.css'],
   encapsulation: ViewEncapsulation.None,
 })
-export class ArticleComponent implements OnInit {
+export class ArticleComponent implements OnInit, OnDestroy {
   private breadcrumbs: Breadcrumb[];
   private article: Article;
+  private articleSub: Subscription;
 
   constructor(
     private breadcrumbService: BreadcrumbService,
@@ -27,7 +29,7 @@ export class ArticleComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.route.paramMap
+    this.articleSub = this.route.paramMap
       .switchMap((params: ParamMap) => this.blogApiService.getArticleBySlug(params.get('slug')))
       .subscribe(
         (article: Article) => {
@@ -41,5 +43,9 @@ export class ArticleComponent implements OnInit {
         ((error: any) => this.router.navigate(["/page-not-found"]))
       );
     this.breadcrumbService.setBreadcrumbs(this.breadcrumbs);
+  }
+
+  ngOnDestroy() {
+    this.articleSub.unsubscribe();
   }
 }
