@@ -108,7 +108,8 @@ nav {
     text-align: center;
     /*background-color: #FFD972;*/
     /*background: linear-gradient(180deg, white, rgba(256,256,256,.97));*/
-    background-color: #FAFAFA;
+    /*background-color: #FAFAFA;*/
+    background: linear-gradient(90deg, #FFD972, rgb(255, 230, 142));
   }
 
   .navbar-nav > .nav-item {
