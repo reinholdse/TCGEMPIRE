@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-
 import { environment } from '../../../../../environments/environment';
+
+declare var $: any;
 
 @Component({
   selector: 'home-about-us',
@@ -18,5 +19,9 @@ export class AboutUsComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  private scroll(target: string) {
+    $("html, body").animate({ scrollTop: $(target).offset().top - 80 }, 1000);
   }
 }

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
+declare var $: any; /* hacky jquery */
+
 @Component({
   selector: 'home-the-shop',
   templateUrl: './the-shop.component.html',
@@ -11,5 +13,9 @@ export class TheShopComponent implements OnInit {
 
   ngOnInit() {
 
+  }
+
+  private scroll(target: string) {
+    $("html, body").animate({ scrollTop: $(target).offset().top - 80 }, 1000);
   }
 }
