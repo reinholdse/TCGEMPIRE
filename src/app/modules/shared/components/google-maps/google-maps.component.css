@@ -1,0 +1,13 @@
+#map {
+  height: 200px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media(min-width: 768px) {
+  #map {
+    height: 250px;
+    width: 600px;
+  }
+}
