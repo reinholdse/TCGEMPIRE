@@ -8,6 +8,8 @@ import { SharedModule } from '../shared/shared.module';
 import { HomeComponent } from './home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { TheShopComponent } from './components/the-shop/the-shop.component';
+import { HomeEventsComponent } from './components/home-events/home-events.component';
+import { HomeBlogComponent } from './components/home-blog/home-blog.component';
 import { AboutUsComponent } from './components/about-us/about-us.component';
 import { FindUsComponent } from './components/find-us/find-us.component';
 import { FollowUsComponent } from './components/follow-us/follow-us.component';
@@ -18,6 +20,8 @@ import { PhoneEmailLinkComponent } from './components/phone-email-link/phone-ema
     HomeComponent,
     BannerComponent,
     TheShopComponent,
+    HomeEventsComponent,
+    HomeBlogComponent,
     AboutUsComponent,
     FindUsComponent,
     FollowUsComponent,

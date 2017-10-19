@@ -192,8 +192,12 @@ h3 {
   box-shadow: none;
 }
 
-.btn-highlight {
-  color: white;
+.btn-highlight,
+.btn-highlight:focus,
+.btn-highlight:active:focus,
+.btn-highlight:hover,
+.btn-highlight:hover:focus {
+  color: #EDEDED;
   background-color: #FF5555;
 }
 
@@ -209,6 +213,7 @@ h3 {
 /* To prevent poor hover state on mobile */
 @media(min-width: 768px) {
   .btn-highlight:hover {
+    color: #EDEDED;
     background-color: #F2384D;
   }
 

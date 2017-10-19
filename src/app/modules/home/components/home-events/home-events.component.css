@@ -1,0 +1,38 @@
+.weekday {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 49px;
+  color: #2CD5DE;
+}
+
+@media(min-width: 992px) {
+  .weekday {
+    font-size: 30px;
+    line-height: 55px;
+  }
+}
+
+.event-time {
+  font-size: 18px;
+  font-weight: 100;
+  color: #989898;
+}
+
+@media(min-width: 992px) {
+  .event-time {
+    font-size: 20px;
+  }
+}
+
+.event-name {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1em;
+  color: #38AEE8;
+}
+
+@media(min-width: 992px) {
+  .event-name {
+    font-size: 25px;
+  }
+}
