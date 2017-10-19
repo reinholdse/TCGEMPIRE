@@ -27,7 +27,7 @@ export class GoogleMapsComponent implements OnInit {
     var marker = new google.maps.Marker({
       position: tcgStoreLocation,
       map: map,
-      icon: environment.assetsURI + 'assets/img/small_location.svg'
+      icon: environment.assetsURI + '/assets/img/small_location.svg'
     });
     marker.setMap(map);
   }
