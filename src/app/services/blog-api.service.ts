@@ -29,8 +29,9 @@ export class BlogApiService {
       .catch((error: any) => Observable.throw('Error in BlogApiService:getArticleBySlug'));
   }
 
-  public getArticles(): Observable<Article[]> {
-    return this.http.get(this.api_uri)
+  public getArticles(num?: number): Observable<Article[]> {
+    num = num || 10;
+    return this.http.get(this.api_uri + '?per_page=' + num)
       .map((res: Response) => this.extractArticles(res.json()))
       .catch((error: any) => Observable.throw('Error in BlogApiService:getArticles'));
   }

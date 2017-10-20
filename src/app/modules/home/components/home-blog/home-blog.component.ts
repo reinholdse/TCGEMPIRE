@@ -14,7 +14,7 @@ export class HomeBlogComponent implements OnInit, OnDestroy {
   constructor(private blogApiService: BlogApiService) { }
 
   ngOnInit() {
-    this.articlesSub = this.blogApiService.getArticles()
+    this.articlesSub = this.blogApiService.getArticles(3)
       .subscribe(
         (articles: Article[]) => this.articles = articles,
         (error: any) => console.log('Ostrich went wrong here!') // Ostrich method!
@@ -24,5 +24,5 @@ export class HomeBlogComponent implements OnInit, OnDestroy {
   ngOnDestroy() {
     this.articlesSub.unsubscribe();
   }
-  
+
 }
