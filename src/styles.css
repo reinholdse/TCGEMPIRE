@@ -290,7 +290,7 @@ a.btn-full-width:hover {
   }
 }
 
-.loader-container {
+/*.loader-container {
   width: 100%;
   height: 80vh;
   display: flex;
@@ -311,7 +311,7 @@ a.btn-full-width:hover {
 @keyframes spin {
   0% { transform: rotate(0deg); }
   100% { transform: rotate(360deg); }
-}
+}*/
 
 /* Home */
 
