@@ -6,6 +6,8 @@ import { SocialMediaLinksComponent } from './components/sm-links/sm-links.compon
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { GoogleMapsComponent } from './components/google-maps/google-maps.component';
 import { MasterballComponent } from './components/masterball/masterball.component';
+import { MasterballGrayscaleComponent } from './components/masterball-grayscale/masterball-grayscale.component';
+import { LoadingBarComponent } from './components/loading-bar/loading-bar.component';
 
 import { RestrictLengthPipe } from '../../pipes/restrict-length.pipe';
 import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
@@ -17,6 +19,8 @@ import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
     ComingSoonComponent,
     GoogleMapsComponent,
     MasterballComponent,
+    MasterballGrayscaleComponent,
+    LoadingBarComponent,
     RestrictLengthPipe,
     StripHtmlPipe
   ],
@@ -29,6 +33,8 @@ import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
     ComingSoonComponent,
     GoogleMapsComponent,
     MasterballComponent,
+    MasterballGrayscaleComponent,
+    LoadingBarComponent,
     RestrictLengthPipe,
     StripHtmlPipe
   ]

@@ -1,0 +1,25 @@
+.loading-bar {
+  position: relative;
+  height: 2px;
+  width: 200px;
+  background-color: #F5F5F5;
+}
+
+.loading-indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #38AEE8;
+  animation: load 1.5s linear forwards;
+}
+
+@keyframes load {
+  0% { width: 0; }
+  10% { width: 140px; }
+  30% { width: 150px; }
+  40% { width: 175px; }
+  70% { width: 180px; }
+  100% { width: 195px; }
+}

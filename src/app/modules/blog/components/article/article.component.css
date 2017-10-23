@@ -133,3 +133,7 @@
 .article-content {
   font-weight: 300;
 }
+
+.article-loading {
+  padding-top: 26vh;
+}

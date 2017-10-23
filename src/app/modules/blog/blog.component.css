@@ -151,3 +151,7 @@
     font-size: 1.2em;
   }
 }
+
+.blog-loading {
+  padding-top: 12vh;
+}
