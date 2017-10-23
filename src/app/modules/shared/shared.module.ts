@@ -5,6 +5,7 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { SocialMediaLinksComponent } from './components/sm-links/sm-links.component';
 import { ComingSoonComponent } from './components/coming-soon/coming-soon.component';
 import { GoogleMapsComponent } from './components/google-maps/google-maps.component';
+import { MasterballComponent } from './components/masterball/masterball.component';
 
 import { RestrictLengthPipe } from '../../pipes/restrict-length.pipe';
 import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
@@ -15,6 +16,7 @@ import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
     SocialMediaLinksComponent,
     ComingSoonComponent,
     GoogleMapsComponent,
+    MasterballComponent,
     RestrictLengthPipe,
     StripHtmlPipe
   ],
@@ -26,6 +28,7 @@ import { StripHtmlPipe} from '../../pipes/strip-html.pipe';
     SocialMediaLinksComponent,
     ComingSoonComponent,
     GoogleMapsComponent,
+    MasterballComponent,
     RestrictLengthPipe,
     StripHtmlPipe
   ]
