@@ -19,54 +19,30 @@
   }
 }
 
-.cards {
-  margin-bottom: 12px;
-}
-
-.card {
-  margin: 8px;
-  height: 100px;
-  background-color: rgba(256, 256, 256, .9);
-  border-radius: 8px;
-  border: none;
-  color: rgba(0,0,0,.05);
-  font-size: 68px;
-  font-family: 'Roboto Slab', serif;
+.game-icon {
+  height: 40px;
 }
 
 @media(min-width: 576px) {
-  .cards {
-    margin-bottom: 15px;
-  }
-
-  .card {
-    margin: 10px;
-    height: 120px;
+  .game-icon {
+    height: 48px;
   }
 }
 
 @media(min-width: 768px) {
-  .cards {
-    margin-bottom: 18px;
-  }
-
-  .card {
-    height: 130px;
+  .game-icon {
+    height: 54px;
   }
 }
 
 @media(min-width: 992px) {
-  .cards {
-    margin-bottom: 22px;
+  .game-icon {
+    height: 58px;
   }
 }
 
 @media(min-width: 1200px) {
-  .cards {
-    margin-bottom: 25px;
-  }
-
-  .col-xl-offset-1 {
-    margin-left: 8.333333%;
+  .game-icon {
+    height: 64px;
   }
 }
